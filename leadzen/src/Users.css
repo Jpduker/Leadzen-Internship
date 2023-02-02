@@ -1,0 +1,14 @@
+.card{
+    
+    margin-bottom: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 100px;
+    top: 15px;
+}
+.btn-details{
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: red;
+    
+}
