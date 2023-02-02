@@ -75,24 +75,38 @@ const Users = () => {
 						{showDetails && selectedUser.id === user.id && (
 							<Flex
 								direction="column"
-								align="center"
+								align="centre"
 								mt={8}
 								p={8}
-								bg="white"
 								borderWidth="1px"
 								rounded="lg"
-							>
+                                backgroundColor="#d5dadd"
+                                						>
 								<Heading size="lg">Additional Details</Heading>
-								<Text>Name: {selectedUser.name}</Text>
-								<Text>Email: {selectedUser.email}</Text>
-								<Text>Website: {selectedUser.website}</Text>
-								<Button
+                                <Heading size="sm">Name</Heading>
+                                <Text> {selectedUser.name}</Text>
+								
+								<Heading size="sm">Email
+                               </Heading>
+                               <Text> {selectedUser.email}</Text>
+
+                               <Heading size="sm">Website
+                               </Heading>
+                               <Text> {selectedUser.website}</Text>
+
+
+								<div className="btn-div">
+                                <Button className="btn-close"
+
 									mt={4}
 									variantColor="red"
+                                    style={{alignSelf:"centre"}}
 									onClick={() => setShowDetails(false)}
 								>
 									<Box as={Icon} name="close" /> Close
 								</Button>
+                                </div>
+								
 							</Flex>
 						)}
 					</div>
