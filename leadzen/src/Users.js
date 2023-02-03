@@ -38,6 +38,7 @@ const Users = () => {
 				users.map((user, index) => (
 					<div key={index}>
 						<Card
+							alignItems="center"
 							className="card"
 							direction={{ base: "column", sm: "row" }}
 							variant="elevated"
